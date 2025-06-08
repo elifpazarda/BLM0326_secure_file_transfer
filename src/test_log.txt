@@ -1,0 +1,47 @@
+=== Uçtan Uca Test Başladı ===
+
+[1] Ping Testi:
+PING 127.0.0.1 (127.0.0.1): 56 data bytes
+64 bytes from 127.0.0.1: icmp_seq=0 ttl=64 time=0.048 ms
+64 bytes from 127.0.0.1: icmp_seq=1 ttl=64 time=0.155 ms
+64 bytes from 127.0.0.1: icmp_seq=2 ttl=64 time=0.114 ms
+64 bytes from 127.0.0.1: icmp_seq=3 ttl=64 time=0.145 ms
+
+--- 127.0.0.1 ping statistics ---
+4 packets transmitted, 4 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 0.048/0.115/0.155/0.042 ms
+
+
+[2] iPerf3 Testi:
+Connecting to host 127.0.0.1, port 5201
+[  5] local 127.0.0.1 port 54516 connected to 127.0.0.1 port 5201
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.00   sec  13.5 GBytes   116 Gbits/sec                  
+[  5]   1.00-2.00   sec  13.4 GBytes   115 Gbits/sec                  
+[  5]   2.00-3.00   sec  13.4 GBytes   115 Gbits/sec                  
+[  5]   3.00-4.00   sec  13.5 GBytes   116 Gbits/sec                  
+[  5]   4.00-5.00   sec  13.0 GBytes   112 Gbits/sec                  
+[  5]   5.00-6.00   sec  13.4 GBytes   115 Gbits/sec                  
+[  5]   6.00-7.00   sec  13.3 GBytes   114 Gbits/sec                  
+[  5]   7.00-8.00   sec  13.5 GBytes   116 Gbits/sec                  
+[  5]   8.00-9.00   sec  13.4 GBytes   115 Gbits/sec                  
+[  5]   9.00-10.00  sec  13.2 GBytes   113 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.00  sec   133 GBytes   115 Gbits/sec                  sender
+[  5]   0.00-10.00  sec   133 GBytes   115 Gbits/sec                  receiver
+
+iperf Done.
+
+
+[3] TCP Dosya Gönderimi:
+ TCP dosya gönderimi başarılı.
+
+[4] UDP (NACK) ile Dosya Gönderimi:
+ UDP (NACK) dosya gönderimi başarılı.
+
+[5] SHA-256 Doğrulama:
+TCP Hash eşleşmesi: 
+ UDP ile alınan dosya bulunamadı.
+
+=== Test Tamamlandı ===
